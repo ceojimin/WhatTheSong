@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World!</string>
+    <string name="app_name">What The Song</string>
+    <string name="app_update">1. 각 테마 DB 곡 추가\n2. 메인 페이지 메뉴  UI 변경</string>
+    <string name="menu_settings">Settings</string>
+
+</resources>

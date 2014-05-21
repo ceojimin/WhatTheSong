@@ -1,0 +1,467 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="230" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:src="@drawable/press_set" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="200"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15" />
+
+            <!-- ViewFlipper_2 시작할 곳 -->
+
+            <ViewFlipper
+                android:id="@+id/viewflipper_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="80" >
+
+                <!--
+                      <ImageView
+                    android:id="@+id/page1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:src="@drawable/on_btn" />
+
+                <ImageView
+                    android:id="@+id/page2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:src="@drawable/off_btn" />
+                
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+                -->
+
+                <ImageView
+                    android:id="@+id/page1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/page1_btn" />
+
+                <ImageView
+                    android:id="@+id/page2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/page2_btn" />
+
+                <ImageView
+                    android:id="@+id/page3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/page3_btn" />
+
+                <ImageView
+                    android:id="@+id/page4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/page4_btn" />
+
+                <ImageView
+                    android:id="@+id/page5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/page5_btn" />
+            </ViewFlipper>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/my_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:src="@drawable/press_my" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15" />
+
+    <!-- 1번 레이아웃 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="310"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15" />
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:src="@drawable/left_btn" />
+
+        <!-- ViewFlipper_1 시작할 곳 -->
+
+        <ViewFlipper
+            android:id="@+id/viewflipper_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="300" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/Song_13"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="130"
+                        android:src="@drawable/press_song13" />
+
+                    <ImageView
+                        android:id="@+id/Song_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="130"
+                        android:src="@drawable/press_song14" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/Song_15"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="130"
+                        android:src="@drawable/press_song15" />
+
+                    <ImageView
+                        android:id="@+id/Song_16"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="130"
+                        android:src="@drawable/press_song16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- page2 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/Song_17"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song17" />
+
+                    <ImageView
+                        android:id="@+id/Song_18"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song18" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/Song_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song1" />
+
+                    <ImageView
+                        android:id="@+id/Song_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- page3 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/Song_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song3" />
+
+                    <ImageView
+                        android:id="@+id/Song_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song4" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/Song_5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song5" />
+
+                    <ImageView
+                        android:id="@+id/Song_6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song6" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- page4 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/Song_7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song7" />
+
+                    <ImageView
+                        android:id="@+id/Song_8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song8" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/Song_9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song9" />
+
+                    <ImageView
+                        android:id="@+id/Song_10"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song10" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- page5 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/Song_11"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song11" />
+
+                    <ImageView
+                        android:id="@+id/Song_12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_song12" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/ready_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_ready" />
+
+                    <ImageView
+                        android:id="@+id/ready_btn_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="150"
+                        android:src="@drawable/press_ready" />
+                </LinearLayout>
+            </LinearLayout>
+        </ViewFlipper>
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:src="@drawable/right_btn" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="63"
+        android:orientation="horizontal" >
+
+        <net.daum.adam.publisher.AdView
+            android:id="@+id/adview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            clientId="4987Z0MT13dc1a8848f"
+            requestInterval="60"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>
